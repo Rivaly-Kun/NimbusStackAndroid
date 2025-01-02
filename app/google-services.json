@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "157736544071",
+    "firebase_url": "https://primeroastweb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "primeroastweb",
+    "storage_bucket": "primeroastweb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157736544071:android:724d8cccff5b0618344e62",
+        "android_client_info": {
+          "package_name": "com.example.nimbusstack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTG32VBropxYIg_btJbawdGHgr8PqiTww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
