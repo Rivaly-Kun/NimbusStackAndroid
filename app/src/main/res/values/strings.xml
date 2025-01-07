@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NimbusStack</string>
+    <string name="REACT_APP_OPENWEATHER_API_KEY">36ef3128e19ad273f317d27f0a0b7d2b</string>
+    <string name="REACT_APP_GOOGLE_MAPS_API_KEY">AIzaSyC0xMVDief2uyLmRxG-UpZ_ns3oi4kvH-c</string>
 </resources>

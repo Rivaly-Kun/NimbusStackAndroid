@@ -23,21 +23,34 @@ import com.example.nimbusstack.ui.theme.NimbusStackTheme
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser
+
         setContent {
             NimbusStackTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    AppScreen()
+                    // Directly switch to Dashboard if user is logged in
+                    if (currentUser != null) {
+                        DashboardScreen(onLogout = { finishAffinity() })
+                    } else {
+                        AppScreen()
+                    }
                 }
             }
         }
     }
 }
+
+
+
 
 @Composable
 fun AppScreen() {
